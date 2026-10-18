@@ -1,3 +1,4 @@
+
 # 📊 Sales Data Analytics Dashboard
 
 [🚀 View Live Dashboard](https://sales-data-analytics-ten.vercel.app/)
@@ -5,6 +6,7 @@
 ### 📸 Dashboard Preview
 
 [![Sales Dashboard](dashboard.png.png)](https://sales-data-analytics-ten.vercel.app/)
+
 
 Explore the interactive dashboard with sales KPIs, charts, and business insights.
 

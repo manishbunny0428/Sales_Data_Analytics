@@ -124,15 +124,13 @@ st.pyplot(fig, use_container_width=False)
 plt.close(fig)
 
 # Show exact ranking in a table too
+
 st.subheader("Product Revenue Ranking")
 
 ranking = revenue_by_product.rename("Total Revenue").reset_index()
-ranking.index = ranking.index + 1
-ranking.index.name = "Rank"
+ranking.insert(0, "Rank", range(1, len(ranking) + 1))
 
-st.dataframe(ranking, use_container_width=True)
-
-
+st.dataframe(ranking, hide_index=True, use_container_width=True)
 
 # Business insights
 st.subheader("💡 Business Insights")

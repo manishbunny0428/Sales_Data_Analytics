@@ -125,25 +125,20 @@ plt.close(fig)
 
 # Show exact ranking in a table too
 
-
 st.subheader("Product Revenue Ranking")
-
 ranking = revenue_by_product.rename("Total Revenue").reset_index()
 ranking.insert(0, "Rank", range(1, len(ranking) + 1))
 
-# Format revenue values for clear display
-ranking["Total Revenue"] = ranking["Total Revenue"].apply(
-    lambda value: round(float(value), 2)
-)
-ranking["Total Revenue"] = ranking["Total Revenue"].apply(
-    lambda value: round(float(value), 2)
-)
+ranking["Total Revenue"] = ranking["Total Revenue"].round(2)
 
 st.dataframe(
     ranking,
     hide_index=True,
     use_container_width=True
 )
+st.table(ranking)
+
+
 
 # Business insights
 st.subheader("💡 Business Insights")

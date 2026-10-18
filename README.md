@@ -1,3 +1,11 @@
+# 📊 Sales Data Analytics Dashboard
+
+[🚀 View Live Dashboard](https://sales-data-analytics-ten.vercel.app/)
+
+Explore the interactive dashboard with sales KPIs, charts, and business insights.
+
+---
+
 # Sales Data Analysis Using Python
 
 ## Project Overview

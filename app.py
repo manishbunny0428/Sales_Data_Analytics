@@ -74,7 +74,7 @@ colors = [
 wedges, _ = ax.pie(
     revenue_by_product,
     startangle=90,
-    radius=0.42,
+    radius=0.8,
     colors=[
         colors[i % len(colors)]
         for i in range(len(revenue_by_product))

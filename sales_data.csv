@@ -1,0 +1,12 @@
+
+OrderID,Product,Category,Quantity,Price,City
+101,Laptop,Electronics,2,45000,Hyderabad
+102,Mouse,Accessories,5,500,Hyderabad
+103,Keyboard,Accessories,3,1200,Chennai
+104,Mobile,Electronics,2,18000,Bangalore
+105,Headphones,Accessories,4,1500,Hyderabad
+106,Monitor,Electronics,1,12000,Chennai
+107,Mouse,Accessories,6,500,Bangalore
+108,Laptop,Electronics,1,45000,Chennai
+109,Keyboard,Accessories,2,1200,Hyderabad
+110,Mobile,Electronics,3,18000,Bangalore

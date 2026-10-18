@@ -125,10 +125,27 @@ plt.close(fig)
 
 # Show exact ranking in a table too
 
+
 st.subheader("Product Revenue Ranking")
 
 ranking = revenue_by_product.rename("Total Revenue").reset_index()
 ranking.insert(0, "Rank", range(1, len(ranking) + 1))
+
+# Format revenue values for clear display
+ranking["Total Revenue"] = ranking["Total Revenue"].map(
+    lambda value: f"₹{value:,.2f}"
+)
+
+st.dataframe(
+    ranking,
+    hide_index=True,
+    use_container_width=True,
+    column_config={
+        "Rank": st.column_config.NumberColumn("Rank", format="%d"),
+        "Product": st.column_config.TextColumn("Product"),
+        "Total Revenue": st.column_config.TextColumn("Total Revenue"),
+    }
+)
 
 st.dataframe(
     ranking,
